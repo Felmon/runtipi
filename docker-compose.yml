@@ -7,7 +7,7 @@ services:
     restart: unless-stopped
     ports:
       - ${NGINX_PORT-80}:80
-      - ${NGINX_PORT_SSL-443}:443
+#       - ${NGINX_PORT_SSL-443}:443
     command: --providers.docker
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock:ro
